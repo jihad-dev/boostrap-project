@@ -1,0 +1,186 @@
+/* ===================
+common css
+==================== */
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.commonBtn {
+  width: 190px;
+  height: 65px;
+  background: #e5745d;
+  text-align: center;
+  line-height: 65px;
+  position: relative;
+}
+
+.commonBtn::after {
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  height: 55px;
+  width: 175px;
+  border: 2px solid white;
+  content: "";
+}
+
+.commonBtn a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+}
+
+/* ===================
+common css
+==================== */
+/* ==========================
+   navber start
+============================= */
+.navbar {
+  padding: 18px 0px;
+}
+
+.navbar-nav {
+  column-gap: 50px;
+}
+
+.nav-link {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  font-size: 18px;
+  font-weight: 400;
+  color: #00413d;
+  font-family: "Jost", sans-serif;
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  color: #e5745d;
+}
+
+.button {
+  background: #e5745d;
+  height: 65px;
+  width: 190px;
+  line-height: 65px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  position: relative;
+}
+
+.button::after {
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  height: 55px;
+  width: 175px;
+  border: 2px solid white;
+  content: "";
+}
+
+/* ==========================
+   navber end
+============================= */
+/* ==========================
+   banner start
+============================= */
+
+.banner {
+  background: #00413d;
+  padding: 220px 0px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.overly {
+  width: 45%;
+  height: 100%;
+  background-image: url("../images//banner-man-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -40%;
+  top: 0;
+  transition: 0.6s;
+  z-index: -1;
+}
+
+.banner:hover .overly {
+  right: 0;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: "Vollkorn", serif;
+  width: 837px;
+}
+
+.banner p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  width: 670px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.banner h1 span {
+  display: inline-block;
+}
+
+/* ==========================
+   banner end
+============================= */
+
+/* ==========================
+  Digital service part start
+============================= */
+hr {
+  width: 50px;
+  border: 5px solid red;
+}
+
+/* ==========================
+   Digital service part  end
+============================= */
+
+.img-div {
+  width: 95%;
+  height: 382px;
+}
+
+/*  */
+
+.skill {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(red var(--value), #e9ecef 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.circle::before {
+  content: attr(data-percent) "%";
+  font-size: 24px;
+  font-weight: 600;
+}
